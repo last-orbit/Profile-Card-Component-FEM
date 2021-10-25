@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*font-family: 'Kumbh Sans', sans-serif;*/
+
+* {
+    font-size: 18px;
+    font-family: 'Kumbh Sans',sans-serif;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.pattern-top {
+    right: 50%;
+    bottom: 38%;
+    z-index: -1;
+    position: absolute;
+}
+
+.pattern-bottom {
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    position: absolute;
+}
+
+.container {
+    z-index: 1;
+    position: absolute;
+    width: 390px;
+    height: 380px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.face {
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    z-index: 2;
+    top: 105px;
+}
+
+.name {
+    padding-top: 70px;
+    margin: 0;
+    
+}
+
+span{
+    color: hsl(0, 0%, 59%);
+}
+
+.city{
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.stat-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: 1px solid;
+    border-top-color: hsl(0, 0%, 59%);
+    text-align: center;
+}
+
+.stat-box p.nums{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-box p.stat-type{
+    font-size: 13px;
+    margin-top: 7px;
+    color: hsl(0, 0%, 59%);
+}
+
+.attribution{
+    display: none;
+}
+
+
+@media only screen and (max-width: 376px) {
+
+    .pattern-top {
+        right: 35%;
+        bottom: 45%;
+    }
+
+    .pattern-bottom{
+        top: 35%;
+        left: 45%;
+    }
+
+    .container{
+        width: 80%;
+        height: 52%;
+    }
+
+    .face{
+        top: 21%;
+    }
+
+    .name{
+        padding-top: 22%;
+    }
+
+    .city {
+        font-size: 13px;
+    }
+
+    .stat-box p.stat-type {
+        font-size: 12px;
+    }
+}
